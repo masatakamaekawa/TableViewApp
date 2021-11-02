@@ -75,7 +75,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            self.taskArray.remove(at: indexPath.row)
+            taskArray.remove(at: indexPath.row)
             
             tableView.deleteRows(at: [indexPath], with: .fade)
             
